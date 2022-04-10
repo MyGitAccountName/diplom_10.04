@@ -1,0 +1,91 @@
+.mobile_menu {
+    display: block;
+    font-size: 1.3rem;
+    padding: 10px 0 !important;
+/*    color: #BB3322 !important;
+    text-shadow: #ffffff 1px 1px 1px, #ffffff -1px -1px 1px,
+    #ffffff -1px 1px 1px, #ffffff 1px -1px 1px !important;*/
+    color: black;
+    text-align: center;
+    border: 1px solid #b07754;
+    border-left-color: #ffebc1;
+    background: linear-gradient(to top, #e0811c 3%, #ffa114 70%, #ffe9c8);
+    box-shadow: inset 0 -7px 2px rgba(0, 0, 0, 0.05),
+    0 5px 2px #88481e;
+}
+
+.mobile_menu_overlay, .mobile_menu_container{
+    position: absolute;
+    top: 4px;
+    left: 0;
+    width: 100%;
+    /*height: 50%;*/
+}
+
+.mobile_menu_overlay {
+    height: 100%;
+}
+
+.mobile_menu_container {
+    -webkit-transition: all 200ms;
+    -moz-transition: all 200ms;
+    transition: all 200ms;
+}
+.mobile_menu_overlay {
+    display: none;
+    cursor: pointer;
+    z-index: 100;
+    background: rgba(130, 100, 75, 0.2);
+}
+.mobile_menu_container {
+    -webkit-transform: translateX(-300px);
+    transform: translateX(-300px);
+    width: 300px;
+    overflow: hidden;
+    z-index: 101;
+}
+.mobile_menu_container.loaded {
+    -webkit-transform: translateX(0px);
+    transform: translateX(0px);
+}
+.mobile_menu_container .mobile_menu_content {
+    overflow: auto;
+    max-height: 100%;
+    padding-bottom: 30px;
+}
+.mobile_menu_container ul {
+    margin: 0;
+    padding: 0;
+}
+.mobile_menu_container ul li {
+    text-wrap: none;
+    list-style-type: none;
+/*    border: 2px solid #c78254;*/
+    margin: 0;
+/*    border-radius: 5px;
+    box-shadow: 0 0 5px #ffb74b, 0 2px 5px rgba(62, 59, 59, 0.73), inset 0 0 4px #fff3e6;
+    background: linear-gradient(to top, #ffa651, #fff095);*/
+}
+.mobile_menu_container ul li a {
+    display: block;
+    font-size: 20px;
+    padding: 5px 20px;
+    border: 2px solid #c78254;
+    border-radius: 5px;
+    box-shadow: 0 0 5px #ffb74b, 0 2px 5px rgba(62, 59, 59, 0.73), inset 0 0 4px #fff3e6;
+    background: linear-gradient(to top, #ffa651, #fff095);
+    color: #923612;
+    text-shadow: #ffffff 1px 1px 1px, #ffffff -1px -1px 1px,
+    #ffffff -1px 1px 1px, #ffffff 1px -1px 1px !important;
+}
+.mobile_menu_container ul li a:hover {
+    background: linear-gradient(to top, #fc8c2b 60%, #ffd558);
+    padding: 15px;
+    font-size: 1.5rem;
+}
+
+@media (max-width: 320px){
+    .mobile_menu_container{
+        width: 240px;
+    }
+}

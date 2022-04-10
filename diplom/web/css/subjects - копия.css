@@ -1,0 +1,161 @@
+/*#banner {
+    display: flex;
+    justify-content: center;
+    width: 880px;
+    margin: 0 auto;
+    background-color: rgba(137, 129, 125, 0.58) !important;
+    position: relative;
+}*/
+
+/*#banner::after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 100px;
+    height: 400px;
+    width: 680px;
+    border: 15px solid #a88459;
+    z-index: 1;
+}*/
+
+.check {
+    width: 150px; /* Ширина рисунка */
+    height: 200px; /* Высота рисунка */
+    display: flex; /* Блочный элемент */
+    flex-direction: column;
+    justify-content: space-between;
+    /* position: relative;  Относительное позиционирование */
+    font-size: 2rem;
+    margin: 0 20px;
+}
+
+.check label {
+    display: block;
+    width: 150px; /* Ширина рисунка */
+    height: 200px; /* Высота рисунка */
+    position: relative; /* Относительное позиционирование */
+}
+
+input[type="checkbox"] + span {
+    position: absolute; /* Абсолютное позиционирование */
+    left: 0; top: 0;
+    width: 100%; height: 100%;
+/*    background: url("../../pic/ico/test.png") no-repeat;
+    background-size: contain;*/
+    cursor: pointer; /* Курсор в виде руки */
+    line-height: 350px;
+    vertical-align: bottom;
+    color: #343434;
+    background-position: 0 -225.042px !important;
+}
+
+#testsCB + span {
+    background: url("../../pic/ico/testCB.png") no-repeat;
+    /*background-size: contain;*/
+    background-size: cover;
+
+}
+
+
+#booksCB + span {
+    background: url("../../pic/ico/bookCB.png") no-repeat;
+    background-size: cover;
+}
+
+input[type="checkbox"]:checked + span  	{
+    background-position: 0 0 !important;
+/*    filter: drop-shadow(0 0 10px #88ff00);*/
+    color: #35b320;
+}
+
+#testsCB, #booksCB {
+    display: none;
+}
+
+
+.subject {
+    /*text-align: center;*/
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+/*
+.aCarousel {
+    width: 100px !important;
+}*/
+
+.subjectContent {
+    flex-grow: 1;
+}
+
+#subjectTop {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#banner {
+    position: relative;
+    width: 40%;
+    max-width: 609px;
+   /* background-color: rgba(113, 217, 51, 0.5) !important;*/
+    background: url("../../pic/desk2.png") no-repeat;
+    background-size: contain;
+/*    border-style: solid;
+    border-color: #a77232;*/
+    /*border:  solid #a77232;*/
+    margin: 0 50px;
+    /*box-shadow: 0 3px 10px #524845, 0 2px 5px #454242;*/
+    filter: drop-shadow(0 7px 7px #24160c);
+}
+
+/*#banner::before {
+    display: block;
+    content: "";
+    position: absolute;
+    top: -2.38%;
+    left: -2.38%;
+    width: 104.76%;
+    height: 104.76%;
+    background-color: #a77232;
+    z-index: -4;
+}*/
+
+#banner::after {
+    display: block;
+    content: "";
+    width: 98%;
+    height: 90%;
+    position: absolute;
+    top: 1%;
+    left: 1%;
+    background-image: url("../../pic/noise.png");
+    opacity: 0.45;
+    /*box-shadow: 0 0 2px 3px #dcb892;*/
+}
+
+#classList {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 20px;
+}
+
+#classList a {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 70px;
+    padding: 10px;
+    border: 2px solid #d4670d;
+    border-radius: 40%;
+    margin: 10px;
+    font-size: 1.2rem;
+    text-decoration: none;
+}
+
+.classNum {
+    font-size: 2rem;
+    line-height: 0.8;
+}
